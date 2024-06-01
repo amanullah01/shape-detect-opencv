@@ -58,7 +58,7 @@ for cnt in contours:
 
 
 cv2.imshow('image', image)
-cv2.imshow('gray_image', gray_image)
-cv2.imshow('canny_image', canny_image)
+# cv2.imshow('gray_image', gray_image)
+# cv2.imshow('canny_image', canny_image)
 cv2.imshow('Final Image', copy_main_image)
 cv2.waitKey(0)
