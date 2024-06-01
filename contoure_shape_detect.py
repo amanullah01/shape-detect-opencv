@@ -17,7 +17,12 @@ contours, hierarchy = cv2.findContours(canny_image.copy(), cv2.RETR_EXTERNAL, cv
 # step 4: find length of the contours
 print("Length of the contours: ", len(contours))
 
+# step 5: draw the contours
+copy_main_image = image.copy()
+cv2.drawContours(copy_main_image, contours, -1, (0, 255, 0), 3)
+
 cv2.imshow('image', image)
 cv2.imshow('gray_image', gray_image)
 cv2.imshow('canny_image', canny_image)
+cv2.imshow('contours', copy_main_image)
 cv2.waitKey(0)
