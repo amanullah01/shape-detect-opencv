@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 
 image = cv2.imread('images/shapes.png')
+# image = cv2.imread('images/main_dots.jpeg')
 copy_main_image = image.copy()
 
 # step 1: convert to grayscale
